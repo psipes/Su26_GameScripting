@@ -1,0 +1,108 @@
+1. Convert user Input to upper
+
+VARIABLE LIST:
+userInput = ""
+inputCapped = ""
+
+
+1. Ask user for phrase to convert to uppercase
+	a. userInput = user's entered phrase
+2. Check phrase for lowercase letters, convert lower to upper
+3. inputCapped = userInput uppercased
+4. Print inputCapped
+
+
+While userInput is EMPTY, ONLY DIGITS, or ALREADY CAPPED
+	1. Ask user for phrase to convert to uppercase
+		a. userInput = user's entered phrase
+		b. CHECK if EMPTY, ONLY DIGITS, or ALREADY CAPPED
+			(repeat if true, exit if not)
+END WHILE
+2. to upper each character that is lowercase. Store in inputCapped
+3. Print inputCapped
+	
+-----------------------------------------------------------------
+2. take 2 user numbers, add together
+
+VARIABLES:
+num1 = ""
+num2 = ""
+total = ""
+
+1. Ask user for first number
+	a. store input in num1
+2. Ask user for second number
+	b. store input in num2
+3. total = num1 + num2
+4. print total
+
+
+1. While num1 is EMPTY or NOT A NUMBER
+	a. Ask user for number
+	b. store input in num1
+	c. check if num1 is empty or not a number
+2. While num2 is EMPTY or NOT A NUMBER
+	a. Ask user for number
+	b. store input in num2
+	c. check if num2 is empty or not a number
+3. total = num1 + num2
+4. print total
+
+
+
+3. Get an numbers from user, add until they say end
+
+VARIABLES:
+newNum = ""
+total = 0
+mathDone = false
+userInput = ""
+
+WHILE mathDone = false
+	1. While newNum is EMPTY or NOT A NUMBER
+		a. Ask user for number
+		b. store input in newNum
+		c. check if newNum is empty or not a number
+	END WHILE
+	2. total = total + newNum
+	3. Ask user if they want to add another number
+		IF userInput NOT y
+			mathDone = true
+		ELSE
+			newNum = ""
+			userInput = ""
+		END IF ELSE
+END WHILE
+
+4. print total
+
+-----------------------------------------------------
+
+4. Print out random number between 0 and user defined, keep going
+
+
+VARIABLES
+newNum = yes (wants a new number)
+userMax = ""
+
+**Defines user max for entire time playing. All numbers will be between 0 and this. If I wanted to change max every time, move into WHILE loop.
+1. While userMax is EMPTY or NOT A NUMBER
+		a. Ask user for number
+		b. store input in userMax
+		c. check if userMax is empty or not a number
+	END WHILE
+
+WHILE newNum = yes (while still wanting another random number)
+	2. print random number between 0 and userMax
+	3. Ask user if they want to add another number (user input = newNum)
+	IF newNum = yes
+		continue (nothing to do)
+	ELSE
+		break (no more numbers)	
+	END IF ELSE
+END WHILE
+
+
+userNum MOD (%) 2.
+	IF 0 THEN even (right)
+	IF 1 THEN odd (left)
