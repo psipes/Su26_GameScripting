@@ -1,2 +1,2 @@
 #print ("Hello world")
-import AddManyNums
+import EvenOddCounter
